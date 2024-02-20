@@ -2,6 +2,9 @@ package basic;
 
 import java.util.Scanner;
 
+/**
+ * <h2>문제 : 홀짝 출력하기</h2>
+ */
 public class Solution02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
