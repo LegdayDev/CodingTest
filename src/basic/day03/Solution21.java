@@ -1,4 +1,4 @@
-package basic;
+package basic.day03;
 
 /**
  * <h2>문제 : 뒤에서 5등까지</h2>

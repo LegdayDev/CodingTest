@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>문제 : n 번째 원소부터</h2>

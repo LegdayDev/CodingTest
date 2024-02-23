@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>문제 : 길이에 따른 연산</h2>

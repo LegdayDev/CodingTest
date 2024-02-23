@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>문제 : flag에 따라 다른 값 반환하기</h2>

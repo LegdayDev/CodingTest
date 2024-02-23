@@ -1,4 +1,4 @@
-package basic;
+package basic.day02;
 
 /**
  * <h2>문제 : n의 배수</h2>

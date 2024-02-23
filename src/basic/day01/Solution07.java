@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <H2>문제 : 정수 부분</H2>

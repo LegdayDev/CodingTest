@@ -1,4 +1,4 @@
-package basic;
+package basic.day03;
 
 /**
  * <h2>문제 : 수 조작하기 1</h2>

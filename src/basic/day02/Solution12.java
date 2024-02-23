@@ -1,4 +1,4 @@
-package basic;
+package basic.day02;
 
 /**
  * <h2>문제 : 문자열을 정수로 변환하기</h2>

@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>문제 : 공배수</h2>

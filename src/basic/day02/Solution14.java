@@ -1,4 +1,4 @@
-package basic;
+package basic.day02;
 
 /**
  * <h2>문제 : 문자열로 변환</h2>

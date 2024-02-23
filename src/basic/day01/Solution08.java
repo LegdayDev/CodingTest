@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>문제 : 대문자로 바꾸기</h2>

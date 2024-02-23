@@ -1,4 +1,4 @@
-package basic;
+package basic.day03;
 
 /**
  * <h2>문제 : 조건에 맞게 수열 변환하기 3</h2>

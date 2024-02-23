@@ -1,4 +1,4 @@
-package basic;
+package basic.day01;
 
 /**
  * <h2>소문자로 바꾸기</h2>
