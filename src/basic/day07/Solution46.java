@@ -1,5 +1,8 @@
 package basic.day07;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * <h2>문제 : 순서 바꾸기</h2>
  * <p>
@@ -8,21 +11,27 @@ package basic.day07;
  */
 public class Solution46 {
     public static void main(String[] args) {
+        int[] res1 = solution(new int[]{2, 1, 6}, 1);// [1, 6, 2]
+        int[] res2 = solution(new int[]{5, 2, 1, 7, 5}, 3);// [7, 5, 5, 2, 1]
 
+        for (int v : res1) {
+            System.out.print(v + " ");
+        }
+        System.out.println();
+        for (int v : res2) {
+            System.out.print(v + " ");
+        }
     }
 
     private static int[] solution(int[] num_list, int n) {
-        int[] leftArr = new int[n];
-        int[] rightArr = new int[num_list.length - n];
-        int[] res = new int[num_list.length];
-        for (int i = 0; i < num_list.length; i++) {
-            if(i<=n-1) leftArr[i] = num_list[i];
-            else if(i>=n-1) rightArr[i] = num_list[i];
-        }
+        List<Integer> intArray = new ArrayList<>();
 
-        for (int i = 0; i < num_list.length; i++) {
-            res[i] = rightArr[i];
+        for (int i = n; i < num_list.length; i++) {
+            intArray.add(num_list[i]);
         }
-        return null;
+        for (int i = 0; i < n; i++) {
+            intArray.add(num_list[i]);
+        }
+        return intArray.stream().mapToInt(i -> i).toArray();
     }
 }
