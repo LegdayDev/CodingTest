@@ -13,31 +13,25 @@ import java.util.List;
  */
 public class Solution57 {
     public static void main(String[] args) {
-        solution("oxooxoxxox");
+        int[] res1 = solution("oxooxoxxox");
+        int[] res2 = solution("xabcxdefxghi");
+
+        for (int i : res1) {
+            System.out.print(i + ",");
+        }
+        System.out.println();
+        for (int i : res2) {
+            System.out.print(i + ",");
+        }
     }
 
     private static int[] solution(String myString) {
-        List<String> strList = new ArrayList<>();
+        String[] splitStr = myString.split("x", -1);
 
-        String str = "";
-        for (int i = 0; i < myString.length(); i++) {
-            if (i == myString.length() - 1 && myString.charAt(i) == 'x') {
-                strList.add("");
-            }
-            if (myString.charAt(i) != 'x') {
-                str += myString.charAt(i);
-            } else {
-                strList.add(str);
-                str = "";
-            }
+        int[] res = new int[splitStr.length];
+        for (int i = 0; i < res.length; i++) {
+            res[i] = splitStr[i].length();
         }
-        int[] res = new int[strList.size()];
-
-        int i = 1;
-        for (String s : strList) {
-            System.out.println((i++) + "번쨰 >>" + s);
-        }
-        System.out.println(strList.size());
-        return null;
+        return res;
     }
 }
