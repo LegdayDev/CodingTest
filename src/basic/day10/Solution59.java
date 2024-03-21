@@ -13,10 +13,15 @@ package basic.day10;
  */
 public class Solution59 {
     public static void main(String[] args) {
-
+        System.out.println(solution(new String[]{"abc", "def", "ghi"},"ef"));
+        System.out.println(solution(new String[]{"abc", "bbc", "cbc"},"c"));
     }
-    public String solution(String[] str_list, String ex) {
-        String answer = "";
-        return answer;
+    private static String solution(String[] str_list, String ex) {
+        String result = "";
+        for (int i = 0; i < str_list.length; i++) {
+            if(str_list[i].indexOf(ex)<0)
+                result+=str_list[i];
+        }
+        return result;
     }
 }
